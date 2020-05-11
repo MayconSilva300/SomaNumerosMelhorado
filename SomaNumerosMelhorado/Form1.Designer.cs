@@ -35,7 +35,7 @@
             this.lblSoma = new System.Windows.Forms.Label();
             this.txtSoma = new System.Windows.Forms.TextBox();
             this.lblMultiplo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMult = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblNum
@@ -98,19 +98,19 @@
             this.lblMultiplo.TabIndex = 6;
             this.lblMultiplo.Text = "Múltiplo";
             // 
-            // textBox1
+            // txtMult
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtMult.Location = new System.Drawing.Point(62, 33);
+            this.txtMult.Name = "txtMult";
+            this.txtMult.Size = new System.Drawing.Size(210, 20);
+            this.txtMult.TabIndex = 7;
             // 
             // FrmSoma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 135);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMult);
             this.Controls.Add(this.lblMultiplo);
             this.Controls.Add(this.txtSoma);
             this.Controls.Add(this.lblSoma);
@@ -136,7 +136,7 @@
         private System.Windows.Forms.Label lblSoma;
         private System.Windows.Forms.TextBox txtSoma;
         private System.Windows.Forms.Label lblMultiplo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMult;
     }
 }
 

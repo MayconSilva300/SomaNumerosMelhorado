@@ -19,15 +19,16 @@ namespace SomaNumerosMelhorado
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            int i, num, soma = 0;
-
+            
+            int i, j, num, mult, soma = 0;
             // extraindo número do TextBox
             int number;
             bool success = Int32.TryParse(txtNum.Text, out number);
-            if (success)
+            bool success1 = Int32.TryParse(txtMult.Text, out number);
+            if (success & success1)
             {
                 num = Convert.ToInt32(txtNum.Text);
-
+                mult = Convert.ToInt32(txtMult.Text);
                 /* inicializa o laço em 1; *
              * testa a condição de parada: i <= num *
              * incrementa a variavel i++ */
@@ -36,11 +37,18 @@ namespace SomaNumerosMelhorado
                     //verifica se i é par
                     if (i % 2 == 0)
                     {
-                        //faz o somatório dos números pares
-                        soma += i;
+                        j = 1;
+                        for (j=1; j <= num; j++)
+                        {
+                            if(mult*j == i)
+                            {
+                                //faz o somatório dos números pares e multiplos
+                                soma += i;
+                            }
+                        }
                     }
                 }
-
+                
                 //apresenta o total da soma dos pares no txtSoma
                 txtSoma.Text = soma.ToString();
 
